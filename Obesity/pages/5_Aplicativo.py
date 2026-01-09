@@ -10,6 +10,7 @@ import plotly.express as px
 import json
 from obesity_pipeline import ObesityPipeline
 from data_loader import MTRANS_MAP
+import pickle
 
 # Load dataset (used for examples / plots)
 DATA_CSV = 'Obesity/Obesity.csv'
@@ -152,3 +153,4 @@ if st.button("Classificar"):
 
         except Exception as e:
             st.error(f"Erro ao obter previsão: {e}")
+
