@@ -3,7 +3,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
-from transformers import pipeline
 
 
 # carregar os dados
@@ -222,3 +221,4 @@ descricao_md = f"""
 """
 
 st.markdown(descricao_md)
+
