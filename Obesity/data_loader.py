@@ -32,7 +32,7 @@ def load_data():
         'FAF': 'Atividade Física',
         'TUE': 'Uso de Dispositivos Tecnológicos',
         'CALC': 'Consumo de Alcool',
-        'MTRANS': 'Meio de Transporte',
+        'MTRANS': 'Meio de Transporte - Caminhar',
         'Obesity': 'Nivel de Obesidade'
     }
     df.rename(columns=colunas_pt, inplace=True)
@@ -162,4 +162,5 @@ def load_data():
     # ------------------------------------------------------------
     return df, df_num, ordem_niveis, ordem_niveis_num, cores_obesidade, cores_obesidade_num, cores_obesidade_num_ajustada
     
+
 
