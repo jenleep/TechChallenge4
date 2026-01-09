@@ -11,7 +11,7 @@ MTRANS_MAP = {
 
 
 def load_data():
-    df = pd.read_csv("C:/Users/jenil/OneDrive/Documents/Faculdade/Tech Challenge 4/obesity/Obesity.csv")
+    df = pd.read_csv("Obesity/Obesity.csv")
 
     # ------------------------------------------------------------
     # 1️⃣ Renomear colunas
@@ -162,3 +162,4 @@ def load_data():
     # ------------------------------------------------------------
     return df, df_num, ordem_niveis, ordem_niveis_num, cores_obesidade, cores_obesidade_num, cores_obesidade_num_ajustada
     
+
