@@ -1,1 +1,46 @@
+# Streamlit Medical App - Visual Identity
+# =======================================
 
+[theme]
+primaryColor = "#EBC97A"           # Sea Green - medical trust
+backgroundColor = "#0F172A"        # Dark Blue-Navy - professional dark
+secondaryBackgroundColor = "#1E293B" # Darker Blue - contrast
+textColor = "#F1F5F9"              # Light Gray - readability
+font = "sans serif"
+
+# Alternative background options (choose one):
+[theme_alternatives]
+dark_medical = "#1A1F2C"           # Charcoal with blue undertone
+warm_dark = "#2D2424"              # Dark warm gray
+soft_dark = "#374151"              # Slate gray
+deep_blue = "#0B1120"              # Very dark blue
+
+[custom_colors]
+accent = "#60A5FA"                 # Light Blue - stands out on dark
+success = "#EBC97A"                # Emerald Green
+warning = "#FBBF24"                # Amber Yellow
+error = "#F87171"                  # Soft Red
+info = "#22D3EE"                   # Cyan
+
+[typography]
+header_font = "sans serif"
+body_font = "sans serif"
+font_weights = { light = 300, normal = 400, bold = 600 }
+
+[layout]
+page_width = "wide"
+sidebar_collapsed = false
+padding = "1.5rem"
+border_radius = "12px"
+
+[visual_effects]
+shadow_intensity = "medium"
+gradient_effects = true
+glass_morphism = false
+
+[icons]
+medical_icon = "🩺"
+favicon = "🏥"
+success_icon = "✅"
+warning_icon = "⚠️" 
+error_icon = "❌"
