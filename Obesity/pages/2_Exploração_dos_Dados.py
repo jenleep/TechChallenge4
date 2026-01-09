@@ -6,7 +6,7 @@ import plotly.express as px
 
 
 # carregar os dados
-csv_path = "C:/Users/jenil/OneDrive/Documents/Faculdade/Tech Challenge 4/obesity/Obesity.csv"
+csv_path = "Obesity/Obesity.csv"
 df = pd.read_csv(csv_path)
 
 
@@ -221,4 +221,5 @@ descricao_md = f"""
 """
 
 st.markdown(descricao_md)
+
 
