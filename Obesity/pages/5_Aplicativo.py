@@ -18,7 +18,7 @@ except Exception:
         return
 
 # Load dataset (used for examples / plots)
-DATA_CSV = 'C:/Users/jenil/OneDrive/Documents/Faculdade/Tech Challenge 4/obesity/Obesity.csv'
+DATA_CSV = 'Obesity/Obesity.csv'
 df = pd.read_csv(DATA_CSV)
 
 # Pipeline feature configuration (must match the training script)
@@ -186,3 +186,4 @@ if st.button("Classificar"):
 
         except Exception as e:
             st.error(f"Erro ao obter previsão: {e}")
+
