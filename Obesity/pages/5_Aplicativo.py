@@ -28,7 +28,7 @@ col_numericas = ['Age', 'Height', 'Weight', 'FCVC', 'FAF', 'CH2O', 'TUE']
 # Create and load pipeline (show friendly message if missing)
 pipeline_obj = ObesityPipeline(col_ordinais, ordem_ordinais, col_nominais, col_numericas)
 try:
-    pipeline_obj.carregar('pipeline_obesidade_pickle.pkl')
+    pipeline_obj.carregar('Obesity/pipeline_obesidade_pickle.pkl')
 except Exception as e:
     st.warning(f"Não foi possível carregar o pipeline salvo: {e}")
 
@@ -153,6 +153,7 @@ if st.button("Classificar"):
 
         except Exception as e:
             st.error(f"Erro ao obter previsão: {e}")
+
 
 
 
