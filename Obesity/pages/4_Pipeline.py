@@ -30,7 +30,7 @@ def texto(text):
 # CARREGAMENTO DOS DADOS
 # =========================
 df = pd.read_csv(
-    "Obesity/Obesity.csv"
+    "Obesity/df_numerico.csv"
 )
 df_modelo = df.copy()
 
@@ -165,6 +165,7 @@ with tab3:
         st.pyplot(fig2)
     else:
         st.info("Este modelo não possui análise de importância das variáveis.")
+
 
 
 
