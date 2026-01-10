@@ -7,36 +7,69 @@ def texto(text):
         </p>
     """, unsafe_allow_html=True)
     
-st.subheader("Recomendações Personalizadas")
-texto("Com base nos padrões identificados nos dados, esta seção apresenta recomendações voltadas à prevenção e controle da obesidade, considerando fatores como idade, hábitos alimentares e estilo de vida.")
+
+st.subheader("Recomendações Baseadas nos Dados")
+texto("As recomendações a seguir foram construídas a partir dos padrões observados nos dados, considerando variáveis como faixa etária, hábitos alimentares, estilo de vida, nível de atividade física e presença de histórico familiar.")
+
 
 st.markdown("---")
+st.markdown("### Por Perfil de Nível de Obesidade")
 
-st.markdown("### Por Nível de Obesidade")
+with st.expander("🔹 Abaixo do Peso"):
+    texto("""
+        • Incentivar acompanhamento nutricional para evitar deficiências nutricionais e promover ganho de peso saudável.
+        • Atenção redobrada em faixas etárias mais jovens, onde o baixo peso teve maior incidência.
+        • Estímulo ao aumento calórico com qualidade: cereais integrais, leguminosas, proteínas e frutas.
+    """)
 
-with st.expander("🔹 Abaixo do peso"):
-    texto("Incentivar acompanhamento nutricional para garantir ganho de peso saudável, especialmente entre mulheres jovens com baixa estatura.")
-
-with st.expander("🔹 Peso normal"):
-    texto("Manter hábitos saudáveis com foco em alimentação balanceada e atividade física regular para evitar progressão para sobrepeso.")
+with st.expander("🔹 Peso Normal"):
+    texto("""
+        • Reforçar manutenção de hábitos alimentares saudáveis para evitar progressão ao sobrepeso.
+        • Incentivar prática regular de atividade física ao menos 150 min/semana.
+        • Evitar consumo excessivo de alimentos ultraprocessados.
+    """)
 
 with st.expander("🔹 Sobrepeso Tipo I e II"):
-    texto("Estimular mudanças graduais no estilo de vida, como redução de alimentos ultraprocessados e aumento da prática de exercícios.")
+    texto("""
+        • Redução gradual de alimentos de alta densidade energética como frituras, doces e bebidas açucaradas.
+        • Inserção de vegetais e fibras para maior saciedade e melhora metabólica.
+        • Aumento da prática de atividades aeróbicas e exercícios resistidos.
+    """)
 
 with st.expander("🔹 Obesidade Tipo I, II e III"):
-    texto("Recomendar acompanhamento médico e nutricional, além de estratégias multidisciplinares para controle de peso e prevenção de comorbidades.")
+    texto("""
+        • Recomendado acompanhamento multidisciplinar (nutricionista, endocrinologista, educador físico).
+        • Controle de fatores associados como hipertensão, diabetes e dislipidemias.
+        • Estratégias comportamentais: controle de porções e registro alimentar.
+        • Importante atenção ao sono e estresse, que aparecem relacionados ao ganho de peso.
+    """)
 
-st.markdown("### Por Hábitos e Estilo de Vida")
 
-with st.expander("Baixo consumo de vegetais"):
-    texto("Aumentar a ingestão de vegetais frescos pode contribuir para o controle do peso e melhora metabólica.")
+st.markdown("### Por Hábitos Alimentares e Estilo de Vida")
 
-with st.expander("Alto consumo de alimentos calóricos"):
-    texto("Reduzir frituras, doces e refrigerantes é essencial para evitar o acúmulo de gordura corporal.")
+with st.expander("Baixo Consumo de Vegetais"):
+    texto("""
+        • Aumentar vegetais frescos melhora saciedade e reduz densidade calórica.
+        • Estratégias simples: incluir ao menos 1 porção no almoço e jantar.
+    """)
 
-with st.expander("Sedentarismo"):
-    texto("Incorporar pelo menos 150 minutos de atividade física moderada por semana pode melhorar significativamente a saúde geral.")
+with st.expander("Alto Consumo de Alimentos Ultracalóricos"):
+    texto("""
+        • Evitar frituras, doces, fast food e bebidas açucaradas reduz significativamente risco de sobrepeso.
+        • Sugestão: substituir refrigerantes por água ou chás sem açúcar.
+    """)
+
+with st.expander("Histórico Familiar de Obesidade"):
+    texto("""
+        • Indivíduos com histórico familiar apresentaram maior probabilidade de sobrepeso e obesidade.
+        • Estratégias precoces são fundamentais: alimentação equilibrada + atividade física regular.
+        • Importante atenção em jovens com histórico familiar, pois tendem a desenvolver mais cedo.
+    """)
+
 
 st.markdown("---")
 st.subheader("Considerações Finais")
-texto("Mudanças simples e consistentes no dia a dia podem ter grande impacto na saúde a longo prazo. Este painel busca apoiar decisões mais conscientes e promover qualidade de vida.")
+texto("""
+        Os dados reforçam que intervenções simples e consistentes podem gerar impacto significativo em longo prazo.
+        O objetivo deste painel é auxiliar na construção de estratégias preventivas e personalizadas para promoção da saúde e qualidade de vida.
+    """)
