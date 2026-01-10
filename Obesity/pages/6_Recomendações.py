@@ -43,15 +43,7 @@ with st.expander("🔹 Obesidade Tipo I, II e III"):
         • Estratégias comportamentais: controle de porções e registro alimentar.
         • Importante atenção ao sono e estresse, que aparecem relacionados ao ganho de peso.
     """)
-
-
-st.markdown("### Por Hábitos Alimentares e Estilo de Vida")
-
-with st.expander("Baixo Consumo de Vegetais"):
-    texto("""
-        • Aumentar vegetais frescos melhora saciedade e reduz densidade calórica.
-        • Estratégias simples: incluir ao menos 1 porção no almoço e jantar.
-    """)
+st.markdown('---')
 
 with st.expander("Alto Consumo de Alimentos Ultracalóricos"):
     texto("""
@@ -73,3 +65,4 @@ texto("""
         Os dados reforçam que intervenções simples e consistentes podem gerar impacto significativo em longo prazo.
         O objetivo deste painel é auxiliar na construção de estratégias preventivas e personalizadas para promoção da saúde e qualidade de vida.
     """)
+
